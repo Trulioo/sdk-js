@@ -1,8 +1,8 @@
 {
-  "name": "trulioo_identity_verification",
-  "version": "1.2.0",
-  "description": "To_run_tests_transactions_on_our_trial_endpoint_in_postman__Run_in_Postman_https__run_pstmn_io_button_svg_https__www_getpostman_com_run_collection_a58f438d101278e2bc62",
-  "license": "Apache 2",
+  "name": "trulioo-sdk",
+  "version": "1.4",
+  "description": "Trulioo JavaScript SDK",
+  "license": "Apache-2.0",
   "main": "dist/index.js",
   "scripts": {
     "build": "babel src -d dist",

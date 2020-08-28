@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.DatasourceResult
+# TruliooSdk.DatasourceResult
 
 ## Properties
 

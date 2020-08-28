@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.ConfigurationApi
+# TruliooSdk.ConfigurationApi
 
 All URIs are relative to *https://gateway.trulioo.com/trial*
 
@@ -26,15 +26,15 @@ This method retrieves the consents required for the data sources currently confi
 ### Example
 
 ```javascript
-import TruliooIdentityVerification from 'trulioo_identity_verification';
-let defaultClient = TruliooIdentityVerification.ApiClient.instance;
+import TruliooSdk from 'trulioo_sdk';
+let defaultClient = TruliooSdk.ApiClient.instance;
 // Configure API key authorization: ApiKeyAuth
 let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new TruliooIdentityVerification.ConfigurationApi();
+let apiInstance = new TruliooSdk.ConfigurationApi();
 let countryCode = "countryCode_example"; // String | Country alpha2 code
 let configurationName = "'Identity Verification'"; // String | The product configuration. Currently \"Identity Verification\" for all products.
 apiInstance.getConsents(countryCode, configurationName, (error, data, response) => {
@@ -79,15 +79,15 @@ This method retrieves all the countries that are available to perform a verifica
 ### Example
 
 ```javascript
-import TruliooIdentityVerification from 'trulioo_identity_verification';
-let defaultClient = TruliooIdentityVerification.ApiClient.instance;
+import TruliooSdk from 'trulioo_sdk';
+let defaultClient = TruliooSdk.ApiClient.instance;
 // Configure API key authorization: ApiKeyAuth
 let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new TruliooIdentityVerification.ConfigurationApi();
+let apiInstance = new TruliooSdk.ConfigurationApi();
 let configurationName = "'Identity Verification'"; // String | The product configuration. Currently \"Identity Verification\" for all products.
 apiInstance.getCountryCodes(configurationName, (error, data, response) => {
   if (error) {
@@ -130,15 +130,15 @@ Gets the provinces states or other subdivisions for a country, mostly matches IS
 ### Example
 
 ```javascript
-import TruliooIdentityVerification from 'trulioo_identity_verification';
-let defaultClient = TruliooIdentityVerification.ApiClient.instance;
+import TruliooSdk from 'trulioo_sdk';
+let defaultClient = TruliooSdk.ApiClient.instance;
 // Configure API key authorization: ApiKeyAuth
 let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new TruliooIdentityVerification.ConfigurationApi();
+let apiInstance = new TruliooSdk.ConfigurationApi();
 let countryCode = "countryCode_example"; // String | Country alpha2 code
 apiInstance.getCountrySubdivisions(countryCode, (error, data, response) => {
   if (error) {
@@ -181,15 +181,15 @@ Gets datasource groups configured for your product and country.
 ### Example
 
 ```javascript
-import TruliooIdentityVerification from 'trulioo_identity_verification';
-let defaultClient = TruliooIdentityVerification.ApiClient.instance;
+import TruliooSdk from 'trulioo_sdk';
+let defaultClient = TruliooSdk.ApiClient.instance;
 // Configure API key authorization: ApiKeyAuth
 let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new TruliooIdentityVerification.ConfigurationApi();
+let apiInstance = new TruliooSdk.ConfigurationApi();
 let configurationName = "'Identity Verification'"; // String | The product configuration. Currently \"Identity Verification\" for all products.
 let countryCode = "countryCode_example"; // String | Country alpha2 code
 apiInstance.getDatasources(configurationName, countryCode, (error, data, response) => {
@@ -234,15 +234,15 @@ This method retrieves details about consents required for data sources currently
 ### Example
 
 ```javascript
-import TruliooIdentityVerification from 'trulioo_identity_verification';
-let defaultClient = TruliooIdentityVerification.ApiClient.instance;
+import TruliooSdk from 'trulioo_sdk';
+let defaultClient = TruliooSdk.ApiClient.instance;
 // Configure API key authorization: ApiKeyAuth
 let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new TruliooIdentityVerification.ConfigurationApi();
+let apiInstance = new TruliooSdk.ConfigurationApi();
 let countryCode = "countryCode_example"; // String | Call CountryCodes to get the countries available to you.
 let configurationName = "'Identity Verification'"; // String | Identity Verification
 apiInstance.getDetailedConsents(countryCode, configurationName, (error, data, response) => {
@@ -287,15 +287,15 @@ Generates json schema for the API, the schema is dynamic based on the country an
 ### Example
 
 ```javascript
-import TruliooIdentityVerification from 'trulioo_identity_verification';
-let defaultClient = TruliooIdentityVerification.ApiClient.instance;
+import TruliooSdk from 'trulioo_sdk';
+let defaultClient = TruliooSdk.ApiClient.instance;
 // Configure API key authorization: ApiKeyAuth
 let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new TruliooIdentityVerification.ConfigurationApi();
+let apiInstance = new TruliooSdk.ConfigurationApi();
 let countryCode = "countryCode_example"; // String | Country alpha2 code
 let configurationName = "'Identity Verification'"; // String | The product configuration. Currently \"Identity Verification\" for all products.
 apiInstance.getFields(countryCode, configurationName, (error, data, response) => {
@@ -340,15 +340,15 @@ Generates json schema for the API, the schema is dynamic based on the recommende
 ### Example
 
 ```javascript
-import TruliooIdentityVerification from 'trulioo_identity_verification';
-let defaultClient = TruliooIdentityVerification.ApiClient.instance;
+import TruliooSdk from 'trulioo_sdk';
+let defaultClient = TruliooSdk.ApiClient.instance;
 // Configure API key authorization: ApiKeyAuth
 let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new TruliooIdentityVerification.ConfigurationApi();
+let apiInstance = new TruliooSdk.ConfigurationApi();
 let countryCode = "countryCode_example"; // String | Country alpha2 code
 let configurationName = "'Identity Verification'"; // String | The product configuration. Currently \"Identity Verification\" for all products.
 apiInstance.getRecommendedFields(countryCode, configurationName, (error, data, response) => {
@@ -393,15 +393,15 @@ Gets the test entities configured for your product and country.
 ### Example
 
 ```javascript
-import TruliooIdentityVerification from 'trulioo_identity_verification';
-let defaultClient = TruliooIdentityVerification.ApiClient.instance;
+import TruliooSdk from 'trulioo_sdk';
+let defaultClient = TruliooSdk.ApiClient.instance;
 // Configure API key authorization: ApiKeyAuth
 let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new TruliooIdentityVerification.ConfigurationApi();
+let apiInstance = new TruliooSdk.ConfigurationApi();
 let configurationName = "'Identity Verification'"; // String | The product configuration. Currently \"Identity Verification\" for all products.
 let countryCode = "countryCode_example"; // String | Country alpha2 code
 apiInstance.getTestEntities(configurationName, countryCode, (error, data, response) => {

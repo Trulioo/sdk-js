@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.PersonInfoAdditionalFields
+# TruliooSdk.PersonInfoAdditionalFields
 
 ## Properties
 

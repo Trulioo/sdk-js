@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.TransactionRecordResultAllOf
+# TruliooSdk.TransactionRecordResultAllOf
 
 ## Properties
 

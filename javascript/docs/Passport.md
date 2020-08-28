@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.Passport
+# TruliooSdk.Passport
 
 ## Properties
 

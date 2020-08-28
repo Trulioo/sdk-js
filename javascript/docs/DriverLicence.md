@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.DriverLicence
+# TruliooSdk.DriverLicence
 
 ## Properties
 

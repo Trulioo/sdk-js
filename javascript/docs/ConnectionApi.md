@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.ConnectionApi
+# TruliooSdk.ConnectionApi
 
 All URIs are relative to *https://gateway.trulioo.com/trial*
 
@@ -19,15 +19,15 @@ This method enables you to check if your credentials are valid. You will need to
 ### Example
 
 ```javascript
-import TruliooIdentityVerification from 'trulioo_identity_verification';
-let defaultClient = TruliooIdentityVerification.ApiClient.instance;
+import TruliooSdk from 'trulioo_sdk';
+let defaultClient = TruliooSdk.ApiClient.instance;
 // Configure API key authorization: ApiKeyAuth
 let ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
 ApiKeyAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new TruliooIdentityVerification.ConnectionApi();
+let apiInstance = new TruliooSdk.ConnectionApi();
 apiInstance.testAuthentication((error, data, response) => {
   if (error) {
     console.error(error);

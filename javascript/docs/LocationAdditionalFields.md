@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.LocationAdditionalFields
+# TruliooSdk.LocationAdditionalFields
 
 ## Properties
 

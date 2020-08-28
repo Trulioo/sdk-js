@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.Communication
+# TruliooSdk.Communication
 
 ## Properties
 

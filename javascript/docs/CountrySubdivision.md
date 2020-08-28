@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.CountrySubdivision
+# TruliooSdk.CountrySubdivision
 
 ## Properties
 

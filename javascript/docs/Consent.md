@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.Consent
+# TruliooSdk.Consent
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.ServiceError
+# TruliooSdk.ServiceError
 
 ## Properties
 

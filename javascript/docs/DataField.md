@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.DataField
+# TruliooSdk.DataField
 
 ## Properties
 

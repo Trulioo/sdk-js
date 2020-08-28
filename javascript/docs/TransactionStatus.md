@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.TransactionStatus
+# TruliooSdk.TransactionStatus
 
 ## Properties
 

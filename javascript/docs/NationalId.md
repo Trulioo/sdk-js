@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.NationalId
+# TruliooSdk.NationalId
 
 ## Properties
 

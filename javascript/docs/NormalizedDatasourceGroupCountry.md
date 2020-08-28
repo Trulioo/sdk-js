@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.NormalizedDatasourceGroupCountry
+# TruliooSdk.NormalizedDatasourceGroupCountry
 
 ## Properties
 

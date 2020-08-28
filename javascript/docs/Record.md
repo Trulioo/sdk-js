@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.Record
+# TruliooSdk.Record
 
 ## Properties
 

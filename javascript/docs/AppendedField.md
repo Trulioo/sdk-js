@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.AppendedField
+# TruliooSdk.AppendedField
 
 ## Properties
 

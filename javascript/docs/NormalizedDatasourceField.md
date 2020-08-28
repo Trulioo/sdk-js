@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.NormalizedDatasourceField
+# TruliooSdk.NormalizedDatasourceField
 
 ## Properties
 

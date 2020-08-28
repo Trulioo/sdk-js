@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.DataFieldsKYC
+# TruliooSdk.DataFieldsKYC
 
 ## Properties
 

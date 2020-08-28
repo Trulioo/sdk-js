@@ -1,4 +1,4 @@
-# TruliooIdentityVerification.Location
+# TruliooSdk.Location
 
 ## Properties
 
