@@ -3,8 +3,8 @@
 TruliooSdk - JavaScript client for trulioo-sdk
 Trulioo SDK
 
-- API version: 1.0.0
-- Package version: 1.0.0
+- API version: 0.1.0
+- Package version: 0.1.0
 - Build package: org.openapitools.codegen.languages.JavascriptClientCodegen
 
 ## Installation
