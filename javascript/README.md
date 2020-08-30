@@ -3,8 +3,8 @@
 TruliooSdk - JavaScript client for trulioo-sdk
 Trulioo SDK
 
-- API version: 1.0.0
-- Package version: 1.0.0
+- API version: 0.1.0
+- Package version: 0.1.0
 - Build package: org.openapitools.codegen.languages.JavascriptClientCodegen
 
 ## Installation
@@ -33,8 +33,8 @@ ApiKeyAuth.apiKey = "YOUR API KEY"
 //ApiKeyAuth.apiKeyPrefix['x-trulioo-api-key'] = "Token"
 
 var api = new TruliooSdk.ConfigurationApi()
-var countryCode = "countryCode_example"; // {String} Country alpha2 code
-var configurationName = "'Identity Verification'"; // {String} The product configuration. Currently \"Identity Verification\" for all products.
+var countryCode = "COUNTRY-CODE"; // {String} Country alpha2 code
+var configurationName = "Identity Verification"; // {String} The product configuration. Currently \"Identity Verification\" for all products.
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
