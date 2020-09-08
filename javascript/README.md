@@ -34,7 +34,7 @@ ApiKeyAuth.apiKey = "YOUR API KEY"
 //ApiKeyAuth.apiKeyPrefix['x-trulioo-api-key'] = "Token"
 
 var api = new TruliooSdk.ConfigurationApi()
-var mode = "trial'; // {String} free trial or live
+var mode = 'trial'; // {String} free trial or live
 var countryCode = "COUNTRY-CODE"; // {String} Country alpha2 code
 var configurationName = "Identity Verification"; // {String} The product configuration. Currently \"Identity Verification\" for all products.
 var callback = function(error, data, response) {
