@@ -1,23 +1,23 @@
 # TruliooSdk.ConfigurationApi
 
-All URIs are relative to *https://gateway.trulioo.com/trial*
+All URIs are relative to *https://gateway.trulioo.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getConsents**](ConfigurationApi.md#getConsents) | **GET** /configuration/v1/consents/{configurationName}/{countryCode} | Get Consents
-[**getCountryCodes**](ConfigurationApi.md#getCountryCodes) | **GET** /configuration/v1/countrycodes/{configurationName} | Get Country Codes
-[**getCountrySubdivisions**](ConfigurationApi.md#getCountrySubdivisions) | **GET** /configuration/v1/countrysubdivisions/{countryCode} | Get Country Subdivisions
-[**getDatasources**](ConfigurationApi.md#getDatasources) | **GET** /configuration/v1/datasources/{configurationName}/{countryCode} | Get Datasources
-[**getDetailedConsents**](ConfigurationApi.md#getDetailedConsents) | **GET** /configuration/v1/detailedConsents/{configurationName}/{countryCode} | Get Detailed Consents
-[**getFields**](ConfigurationApi.md#getFields) | **GET** /configuration/v1/fields/{configurationName}/{countryCode} | Get Fields
-[**getRecommendedFields**](ConfigurationApi.md#getRecommendedFields) | **GET** /configuration/v1/recommendedfields/{configurationName}/{countryCode} | Get Recommended Fields
-[**getTestEntities**](ConfigurationApi.md#getTestEntities) | **GET** /configuration/v1/testentities/{configurationName}/{countryCode} | Get Test Entities
+[**getConsents**](ConfigurationApi.md#getConsents) | **GET** /{mode}/configuration/v1/consents/{configurationName}/{countryCode} | Get Consents
+[**getCountryCodes**](ConfigurationApi.md#getCountryCodes) | **GET** /{mode}/configuration/v1/countrycodes/{configurationName} | Get Country Codes
+[**getCountrySubdivisions**](ConfigurationApi.md#getCountrySubdivisions) | **GET** /{mode}/configuration/v1/countrysubdivisions/{countryCode} | Get Country Subdivisions
+[**getDatasources**](ConfigurationApi.md#getDatasources) | **GET** /{mode}/configuration/v1/datasources/{configurationName}/{countryCode} | Get Datasources
+[**getDetailedConsents**](ConfigurationApi.md#getDetailedConsents) | **GET** /{mode}/configuration/v1/detailedConsents/{configurationName}/{countryCode} | Get Detailed Consents
+[**getFields**](ConfigurationApi.md#getFields) | **GET** /{mode}/configuration/v1/fields/{configurationName}/{countryCode} | Get Fields
+[**getRecommendedFields**](ConfigurationApi.md#getRecommendedFields) | **GET** /{mode}/configuration/v1/recommendedfields/{configurationName}/{countryCode} | Get Recommended Fields
+[**getTestEntities**](ConfigurationApi.md#getTestEntities) | **GET** /{mode}/configuration/v1/testentities/{configurationName}/{countryCode} | Get Test Entities
 
 
 
 ## getConsents
 
-> [String] getConsents(countryCode, configurationName)
+> [String] getConsents(mode, countryCode, configurationName)
 
 Get Consents
 
@@ -35,9 +35,10 @@ ApiKeyAuth.apiKey = 'YOUR API KEY';
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new TruliooSdk.ConfigurationApi();
+let mode = 'trial'; // String | free trial or live
 let countryCode = "countryCode_example"; // String | Country alpha2 code
 let configurationName = "'Identity Verification'"; // String | The product configuration. Currently \"Identity Verification\" for all products.
-apiInstance.getConsents(countryCode, configurationName, (error, data, response) => {
+apiInstance.getConsents(mode, countryCode, configurationName, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -51,6 +52,7 @@ apiInstance.getConsents(countryCode, configurationName, (error, data, response) 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **mode** | **String**| free trial or live | [default to &#39;trial&#39;]
  **countryCode** | **String**| Country alpha2 code | 
  **configurationName** | **String**| The product configuration. Currently \&quot;Identity Verification\&quot; for all products. | [default to &#39;Identity Verification&#39;]
 
@@ -70,7 +72,7 @@ Name | Type | Description  | Notes
 
 ## getCountryCodes
 
-> [String] getCountryCodes(configurationName)
+> [String] getCountryCodes(mode, configurationName)
 
 Get Country Codes
 
@@ -88,8 +90,9 @@ ApiKeyAuth.apiKey = 'YOUR API KEY';
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new TruliooSdk.ConfigurationApi();
+let mode = 'trial'; // String | free trial or live
 let configurationName = "'Identity Verification'"; // String | The product configuration. Currently \"Identity Verification\" for all products.
-apiInstance.getCountryCodes(configurationName, (error, data, response) => {
+apiInstance.getCountryCodes(mode, configurationName, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -103,6 +106,7 @@ apiInstance.getCountryCodes(configurationName, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **mode** | **String**| free trial or live | [default to &#39;trial&#39;]
  **configurationName** | **String**| The product configuration. Currently \&quot;Identity Verification\&quot; for all products. | [default to &#39;Identity Verification&#39;]
 
 ### Return type
@@ -121,7 +125,7 @@ Name | Type | Description  | Notes
 
 ## getCountrySubdivisions
 
-> [CountrySubdivision] getCountrySubdivisions(countryCode)
+> [CountrySubdivision] getCountrySubdivisions(mode, countryCode)
 
 Get Country Subdivisions
 
@@ -139,8 +143,9 @@ ApiKeyAuth.apiKey = 'YOUR API KEY';
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new TruliooSdk.ConfigurationApi();
+let mode = 'trial'; // String | free trial or live
 let countryCode = "countryCode_example"; // String | Country alpha2 code
-apiInstance.getCountrySubdivisions(countryCode, (error, data, response) => {
+apiInstance.getCountrySubdivisions(mode, countryCode, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -154,6 +159,7 @@ apiInstance.getCountrySubdivisions(countryCode, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **mode** | **String**| free trial or live | [default to &#39;trial&#39;]
  **countryCode** | **String**| Country alpha2 code | 
 
 ### Return type
@@ -172,7 +178,7 @@ Name | Type | Description  | Notes
 
 ## getDatasources
 
-> [NormalizedDatasourceGroupCountry] getDatasources(configurationName, countryCode)
+> [NormalizedDatasourceGroupCountry] getDatasources(mode, configurationName, countryCode)
 
 Get Datasources
 
@@ -190,9 +196,10 @@ ApiKeyAuth.apiKey = 'YOUR API KEY';
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new TruliooSdk.ConfigurationApi();
+let mode = 'trial'; // String | free trial or live
 let configurationName = "'Identity Verification'"; // String | The product configuration. Currently \"Identity Verification\" for all products.
 let countryCode = "countryCode_example"; // String | Country alpha2 code
-apiInstance.getDatasources(configurationName, countryCode, (error, data, response) => {
+apiInstance.getDatasources(mode, configurationName, countryCode, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -206,6 +213,7 @@ apiInstance.getDatasources(configurationName, countryCode, (error, data, respons
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **mode** | **String**| free trial or live | [default to &#39;trial&#39;]
  **configurationName** | **String**| The product configuration. Currently \&quot;Identity Verification\&quot; for all products. | [default to &#39;Identity Verification&#39;]
  **countryCode** | **String**| Country alpha2 code | 
 
@@ -225,7 +233,7 @@ Name | Type | Description  | Notes
 
 ## getDetailedConsents
 
-> [Consent] getDetailedConsents(countryCode, configurationName)
+> [Consent] getDetailedConsents(mode, countryCode, configurationName)
 
 Get Detailed Consents
 
@@ -243,9 +251,10 @@ ApiKeyAuth.apiKey = 'YOUR API KEY';
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new TruliooSdk.ConfigurationApi();
+let mode = 'trial'; // String | free trial or live
 let countryCode = "countryCode_example"; // String | Call CountryCodes to get the countries available to you.
 let configurationName = "'Identity Verification'"; // String | Identity Verification
-apiInstance.getDetailedConsents(countryCode, configurationName, (error, data, response) => {
+apiInstance.getDetailedConsents(mode, countryCode, configurationName, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -259,6 +268,7 @@ apiInstance.getDetailedConsents(countryCode, configurationName, (error, data, re
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **mode** | **String**| free trial or live | [default to &#39;trial&#39;]
  **countryCode** | **String**| Call CountryCodes to get the countries available to you. | 
  **configurationName** | **String**| Identity Verification | [default to &#39;Identity Verification&#39;]
 
@@ -278,7 +288,7 @@ Name | Type | Description  | Notes
 
 ## getFields
 
-> Object getFields(countryCode, configurationName)
+> Object getFields(mode, countryCode, configurationName)
 
 Get Fields
 
@@ -296,9 +306,10 @@ ApiKeyAuth.apiKey = 'YOUR API KEY';
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new TruliooSdk.ConfigurationApi();
+let mode = 'trial'; // String | free trial or live
 let countryCode = "countryCode_example"; // String | Country alpha2 code
 let configurationName = "'Identity Verification'"; // String | The product configuration. Currently \"Identity Verification\" for all products.
-apiInstance.getFields(countryCode, configurationName, (error, data, response) => {
+apiInstance.getFields(mode, countryCode, configurationName, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -312,6 +323,7 @@ apiInstance.getFields(countryCode, configurationName, (error, data, response) =>
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **mode** | **String**| free trial or live | [default to &#39;trial&#39;]
  **countryCode** | **String**| Country alpha2 code | 
  **configurationName** | **String**| The product configuration. Currently \&quot;Identity Verification\&quot; for all products. | [default to &#39;Identity Verification&#39;]
 
@@ -331,7 +343,7 @@ Name | Type | Description  | Notes
 
 ## getRecommendedFields
 
-> Object getRecommendedFields(countryCode, configurationName)
+> Object getRecommendedFields(mode, countryCode, configurationName)
 
 Get Recommended Fields
 
@@ -349,9 +361,10 @@ ApiKeyAuth.apiKey = 'YOUR API KEY';
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new TruliooSdk.ConfigurationApi();
+let mode = 'trial'; // String | free trial or live
 let countryCode = "countryCode_example"; // String | Country alpha2 code
 let configurationName = "'Identity Verification'"; // String | The product configuration. Currently \"Identity Verification\" for all products.
-apiInstance.getRecommendedFields(countryCode, configurationName, (error, data, response) => {
+apiInstance.getRecommendedFields(mode, countryCode, configurationName, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -365,6 +378,7 @@ apiInstance.getRecommendedFields(countryCode, configurationName, (error, data, r
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **mode** | **String**| free trial or live | [default to &#39;trial&#39;]
  **countryCode** | **String**| Country alpha2 code | 
  **configurationName** | **String**| The product configuration. Currently \&quot;Identity Verification\&quot; for all products. | [default to &#39;Identity Verification&#39;]
 
@@ -384,7 +398,7 @@ Name | Type | Description  | Notes
 
 ## getTestEntities
 
-> [DataFields] getTestEntities(configurationName, countryCode)
+> [DataFields] getTestEntities(mode, configurationName, countryCode)
 
 Get Test Entities
 
@@ -402,9 +416,10 @@ ApiKeyAuth.apiKey = 'YOUR API KEY';
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new TruliooSdk.ConfigurationApi();
+let mode = 'trial'; // String | free trial or live
 let configurationName = "'Identity Verification'"; // String | The product configuration. Currently \"Identity Verification\" for all products.
 let countryCode = "countryCode_example"; // String | Country alpha2 code
-apiInstance.getTestEntities(configurationName, countryCode, (error, data, response) => {
+apiInstance.getTestEntities(mode, configurationName, countryCode, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -418,6 +433,7 @@ apiInstance.getTestEntities(configurationName, countryCode, (error, data, respon
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **mode** | **String**| free trial or live | [default to &#39;trial&#39;]
  **configurationName** | **String**| The product configuration. Currently \&quot;Identity Verification\&quot; for all products. | [default to &#39;Identity Verification&#39;]
  **countryCode** | **String**| Country alpha2 code | 
 

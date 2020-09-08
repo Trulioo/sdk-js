@@ -2,7 +2,7 @@
 
 # Contributing to `Trulioo/sdk-js`
 
-Thanks for wanting to contribute to Trulioo/sdk-js!
+Thanks for contributing to Trulioo/sdk-js!
 
 ## Commits
 

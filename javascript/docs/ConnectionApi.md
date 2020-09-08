@@ -1,16 +1,16 @@
 # TruliooSdk.ConnectionApi
 
-All URIs are relative to *https://gateway.trulioo.com/trial*
+All URIs are relative to *https://gateway.trulioo.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**testAuthentication**](ConnectionApi.md#testAuthentication) | **GET** /connection/v1/testauthentication | Test Authentication
+[**testAuthentication**](ConnectionApi.md#testAuthentication) | **GET** /{mode}/connection/v1/testauthentication | Test Authentication
 
 
 
 ## testAuthentication
 
-> String testAuthentication()
+> String testAuthentication(mode)
 
 Test Authentication
 
@@ -28,7 +28,8 @@ ApiKeyAuth.apiKey = 'YOUR API KEY';
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new TruliooSdk.ConnectionApi();
-apiInstance.testAuthentication((error, data, response) => {
+let mode = 'trial'; // String | free trial or live
+apiInstance.testAuthentication(mode, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -39,7 +40,10 @@ apiInstance.testAuthentication((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **mode** | **String**| free trial or live | [default to &#39;trial&#39;]
 
 ### Return type
 

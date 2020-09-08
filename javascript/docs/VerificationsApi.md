@@ -1,17 +1,17 @@
 # TruliooSdk.VerificationsApi
 
-All URIs are relative to *https://gateway.trulioo.com/trial*
+All URIs are relative to *https://gateway.trulioo.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getTransactionRecord**](VerificationsApi.md#getTransactionRecord) | **GET** /verifications/v1/transactionrecord/{id} | Get Transaction Record
-[**verify**](VerificationsApi.md#verify) | **POST** /verifications/v1/verify | Verify
+[**getTransactionRecord**](VerificationsApi.md#getTransactionRecord) | **GET** /{mode}/verifications/v1/transactionrecord/{id} | Get Transaction Record
+[**verify**](VerificationsApi.md#verify) | **POST** /{mode}/verifications/v1/verify | Verify
 
 
 
 ## getTransactionRecord
 
-> TransactionRecordResult getTransactionRecord(id)
+> TransactionRecordResult getTransactionRecord(mode, id)
 
 Get Transaction Record
 
@@ -29,8 +29,9 @@ ApiKeyAuth.apiKey = 'YOUR API KEY';
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new TruliooSdk.VerificationsApi();
+let mode = 'trial'; // String | free trial or live
 let id = "id_example"; // String | The TransactionRecordID from the Verify response, this will be a GUID
-apiInstance.getTransactionRecord(id, (error, data, response) => {
+apiInstance.getTransactionRecord(mode, id, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -44,6 +45,7 @@ apiInstance.getTransactionRecord(id, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **mode** | **String**| free trial or live | [default to &#39;trial&#39;]
  **id** | **String**| The TransactionRecordID from the Verify response, this will be a GUID | 
 
 ### Return type
@@ -62,7 +64,7 @@ Name | Type | Description  | Notes
 
 ## verify
 
-> VerifyResult verify(verifyRequest)
+> VerifyResult verify(mode, verifyRequest)
 
 Verify
 
@@ -80,8 +82,9 @@ ApiKeyAuth.apiKey = 'YOUR API KEY';
 //ApiKeyAuth.apiKeyPrefix = 'Token';
 
 let apiInstance = new TruliooSdk.VerificationsApi();
+let mode = 'trial'; // String | free trial or live
 let verifyRequest = new TruliooSdk.VerifyRequest(); // VerifyRequest | 
-apiInstance.verify(verifyRequest, (error, data, response) => {
+apiInstance.verify(mode, verifyRequest, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -95,6 +98,7 @@ apiInstance.verify(verifyRequest, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **mode** | **String**| free trial or live | [default to &#39;trial&#39;]
  **verifyRequest** | [**VerifyRequest**](VerifyRequest.md)|  | 
 
 ### Return type
