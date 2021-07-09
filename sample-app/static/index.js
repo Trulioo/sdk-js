@@ -1,5 +1,25 @@
 hljs.highlightAll();
 
+const isJsonString = (str) => {
+  try {
+    JSON.parse(str);
+  } catch (e) {
+    return false;
+  }
+  return true;
+};
+
+const formatErrorResponse = (responseBody) => {
+  const obj = JSON.parse(responseBody);
+  const detailedErrorMessageStrings = [
+    `Exception when calling ${obj.operation}`,
+    `Status code:       ${obj.errorCode}`,
+    `Reason:            ${obj.message}`,
+  ];
+
+  return detailedErrorMessageStrings.join('\n');
+};
+
 const bindApiCall = (buttonElement, responseElement, path, method, body) => {
   buttonElement.addEventListener('click', async () => {
     buttonElement.textContent = 'Running...';
@@ -9,7 +29,13 @@ const bindApiCall = (buttonElement, responseElement, path, method, body) => {
       headers: { 'Content-Type': 'application/json' },
       body: body,
     });
-    responseElement.textContent = await response.text();
+
+    const responseBody = await response.text();
+    if (response.status >= 400 && isJsonString(responseBody)) {
+      responseElement.textContent = formatErrorResponse(responseBody);
+    } else {
+      responseElement.textContent = responseBody;
+    }
     if (response.status === 200) {
       hljs.highlightBlock(responseElement);
     }

@@ -1,3 +1,6 @@
+#### Attention!
+This SDK is for [Developer Hub API](https://gateway-admin.trulioo.com) only.
+
 # Trulioo JavaScript SDK
 
 - Package version: 1.0.3
